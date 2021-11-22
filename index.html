@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading-main">Spli <span>tter</span></h1>
+    </header>
+
+    <div class="container">
+      <div class="con-lft">
+        <div class="input input-top">
+          <label for="bill" class="input-label">Bill</label>
+          <input
+            type="number"
+            id="bill"
+            class="input-top__number input-field"
+            placeholder="0"
+          />
+        </div>
+
+        <div class="input-mid">
+          <h2 class="input-mid__heading">Select Tip %</h2>
+
+          <ul class="input-mid__list">
+            <li class="list-item">
+              <button class="list-btn btn-one">5%</button>
+            </li>
+            <li class="list-item">
+              <button class="list-btn btn-two">10%</button>
+            </li>
+            <li class="list-item">
+              <button class="list-btn btn-three">15%</button>
+            </li>
+
+            <li class="list-item">
+              <button class="list-btn btn-four">25%</button>
+            </li>
+            <li class="list-item">
+              <button class="list-btn btn-five">50%</button>
+            </li>
+            <li class="list-item">
+              <input
+                type="number"
+                class="list-input input-custom"
+                placeholder="Custom"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="input input-bot">
+          <label for="number" class="input-label">Number of People</label>
+          <p class="input-text">Can't be Zero</p>
+          <input
+            type="number"
+            id="number"
+            class="input-bot__number input-field"
+            placeholder="0"
+          />
+        </div>
+      </div>
+
+      <div class="con-rgt">
+        <div class="con-box__main">
+          <div class="con-box__sub">
+            <div class="con-content">
+              <h2 class="con-content__heading">Tip Amount</h2>
+              <p class="con-content__txt">/ Person</p>
+            </div>
+            <p class="con-box__txt con-box__txt-top">$0.00</p>
+          </div>
+
+          <div class="con-box__sub">
+            <div class="con-content">
+              <h2 class="con-content__heading">Total</h2>
+              <p class="con-content__txt">/ Person</p>
+            </div>
+            <p class="con-box__txt con-box__txt-bot">$0.00</p>
+          </div>
+        </div>
+
+        <button type="submit" class="con-box__btn">Reset</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">venkatesh.b</a>.
+    </div>
+  </body>
+</html>
